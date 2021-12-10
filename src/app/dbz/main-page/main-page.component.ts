@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Personaje {
-  nombre: string;
-  poder: number
-}
+import { Personaje } from '../interfaces/personaje.interface';
 
 @Component({
   selector: 'app-main-page',
@@ -13,21 +9,12 @@ interface Personaje {
 export class MainPageComponent implements OnInit {
 
   nuevo: Personaje = {
-    nombre: 'Truncks',
-    poder: 14000
+    nombre: 'Maestro Roshi',
+    poder: 1000
   }
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  agregar() {
-    console.log(this.nuevo);
-  }
-
-  cambiarNombre(event: Event) {
-    console.log(event.target);
-  }
+  ngOnInit(): void { }
 
 }
