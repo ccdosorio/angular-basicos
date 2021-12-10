@@ -4,8 +4,7 @@ import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-agregar',
-  templateUrl: './agregar.component.html',
-  styleUrls: ['./agregar.component.css']
+  templateUrl: './agregar.component.html'
 })
 export class AgregarComponent implements OnInit {
 
