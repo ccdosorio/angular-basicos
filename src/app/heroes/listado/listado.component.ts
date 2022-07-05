@@ -19,7 +19,7 @@ export class ListadoComponent implements OnInit {
     console.log("ngOnInit");
   }
 
-  borrarHeroe() {
+  borrarHeroe(): void {
     this.heroeBorrado = this.heroes.shift() || '';
   }
 
